@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: hsl(0, 0%, 0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass";
+}
+
+/* Mobile: 375px modal1 styles *********************** */
+
+.modal1 {
+  width: 300px;
+  background-color: hsl(216, 12%, 8%);
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.top-icon,
+.ratings-button {
+  width: 40px;
+  height: 40px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.ratings-button {
+  cursor: pointer;
+}
+
+.ratings-check {
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+
+.text-look,
+.thankyou {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+
+.text-content,
+.thankyou-text {
+  color: hsl(217, 12%, 63%);
+  font-size: 0.9em;
+  margin-bottom: 16px;
+}
+
+.ratings-buttons {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 16px;
+}
+
+.btn {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  height: 40px;
+  width: 100%;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.1em;
+  border-radius: 32px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* effects  */
+
+.ratings-button:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.ratings-check:checked + .ratings-button {
+  background-color: hsl(216, 12%, 54%);
+}
+
+.btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+/* modal2 */
+
+.modal2 {
+  width: 300px;
+  background-color: hsl(216, 12%, 8%);
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.top {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.message {
+  background-color: hsl(213, 19%, 18%);
+  height: 32px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.message-content {
+  color: #fc7613;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.close {
+  position: relative;
+  top: -348px;
+  left: 148px;
+  padding: 10px 20px;
+  color: rgb(182, 182, 182);
+  text-decoration: none;
+  z-index: 10;
+  background-color: hsl(213, 19%, 18%);
+  height: 24px;
+  width: 24px;
+  padding: 10px 16px;
+  border-radius: 40px;
+}
+
+.close:hover {
+  background-color: hsl(216, 12%, 8%);
+  height: 24px;
+  width: 24px;
+  padding: 10px 16px;
+  border-radius: 40px;
+  color: white;
+  border: 2px solid hsl(213, 19%, 18%);
+}

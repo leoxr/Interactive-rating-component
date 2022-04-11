@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive rating component</title>
+    <link rel="shortcut icon" href="/public/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="/public/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section id="modal1" class="ratings modal1">
+        <div class="top-icon">
+          <img src="/public/img/icon-star.svg" alt="icon star" />
+        </div>
+        <h2 class="text-look">How did we do?</h2>
+        <p class="text-content">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="ratings-buttons">
+          <input
+            id="one-star"
+            class="ratings-check"
+            type="radio"
+            name="rating"
+            value="1"
+          />
+          <label for="one-star" class="ratings-button">1</label>
+          <input
+            id="two-star"
+            class="ratings-check"
+            type="radio"
+            name="rating"
+            value="2"
+          />
+          <label for="two-star" class="ratings-button">2</label>
+          <input
+            id="three-star"
+            class="ratings-check"
+            type="radio"
+            name="rating"
+            value="3"
+          />
+          <label for="three-star" class="ratings-button">3</label>
+          <input
+            id="four-star"
+            class="ratings-check"
+            type="radio"
+            name="rating"
+            value="4"
+          />
+          <label for="four-star" class="ratings-button">4</label>
+          <input
+            id="five-star"
+            class="ratings-check"
+            type="radio"
+            name="rating"
+            value="5"
+          />
+          <label for="five-star" class="ratings-button">5</label>
+        </div>
+
+        <button id="btn" class="btn btn-submit">submit</button>
+      </section>
+
+      <!-- modal 2 -->
+
+      <section id="modal2" class="modal2 hidden">
+        <div class="top">
+          <img src="/public/img/illustration-thank-you.svg" alt="" />
+        </div>
+        <div class="message" id="message"></div>
+
+        <h3 class="thankyou">Thank you!</h3>
+        <p class="thankyou-text">
+          We appreciate you taking the time to give a rating. if you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+
+        <a href="/public/index.html" class="close">x</a>
+      </section>
+    </main>
+
+    <script src="/public/index.js"></script>
+  </body>
+</html>
